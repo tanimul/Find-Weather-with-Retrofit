@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:hint="Enter City name " />
+
+        <ImageButton
+            android:id="@+id/searchcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_temp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature : "
+        android:textSize="30sp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description : "
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/text_humidity"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Humidity : "
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+</LinearLayout>
